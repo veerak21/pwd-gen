@@ -1,39 +1,31 @@
-
+//Declaring the variables.
 var characterLength = 8;
 var choiceArr = [];
-var specialCharArr = ["!", "@", "%", "$", "{", "&", "£", "*", "^", "#"];
+var specialCharArr = ["!", "@", "%", "$", "{", "&", "£", "*", "^", "#", "/", ")"];
 var lowerCaseArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCaseArr = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-var numberArr = ['1','2', '3', '4', '5', '6', '7', '8', '9', '0'];
+var numberArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-  // Assignment code here
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Write password to the #password input
+// This function prompts for the declared variables and generates the password
 function writePassword() {
-  var correctPromts = getPrompts();
+  var correctPromts = getPrompts(); // calling and assigning the getPrompts function
   var passwordText = document.querySelector("#password");
- 
+ // This condition checks if the promts are true
   if(correctPromts){
-  var newPassword = generatePassword();
+  var newPassword = generatePassword(); //calling and assigning generatePassword function 
        passwordText.value = newPassword;
   } else {
     passwordText.value = "";
   }
 }
-function generatePassword(){
-  var password = "";
-  for (var i = 0; i < characterLength; i++){
-    var randomIndex = Math.floor(Math.random() * choiceArr.length);
-    password = password + choiceArr[randomIndex];
-  }
-  return password;
-  }
-  function getPrompts(){
+// This function asks for the user inputs.
+ function getPrompts(){
    choiceArr = [];
     characterLength = parseInt(prompt("How long do you want your password to be?"));
     
@@ -54,4 +46,13 @@ function generatePassword(){
         choiceArr = choiceArr.concat(numberArr);
        }
       return true;
-    }  
+    } 
+    // This function executes the logic and returns the generated password. 
+    function generatePassword(){
+      var password = "";
+      for (var i = 0; i < characterLength; i++){
+        var randomIndex = Math.floor(Math.random() * choiceArr.length);
+        password = password + choiceArr[randomIndex];
+      }
+      return password;
+      }
