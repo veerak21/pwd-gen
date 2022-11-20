@@ -87,7 +87,6 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -123,8 +122,9 @@ button[disabled] {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+    background-color: blue;
   }
-
+  
   #password {
     font-size: 1rem;
   }
