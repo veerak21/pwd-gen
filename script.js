@@ -36,6 +36,7 @@ function writePassword() {
           alert("Password length must be a number, and between 8 and 128 characters");
        return false;
        }
+       // These conditions checks user confirm whether or not to include character types in the password
        if (confirm("Would you like to include lowercase letters in your password?")){
         choiceArr = choiceArr.concat(lowerCaseArr);
        }
