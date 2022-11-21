@@ -25,3 +25,9 @@ Output screenshot
 Output screenshot for 690px
 
 ![screenshot-of-applicaton](./assets/images/690px.png)
+
+
+Output screenshot for 690px
+
+![screenshot-of-applicaton](./assets/images/500px.png)
+
