@@ -17,11 +17,11 @@ Thanks to Xander Rapstine (https://github.com/Xandromus) for providing the resco
 
 https://veerak21.github.io/pwd-gen
 
-Input screenshot
-
-![screenshot-of-applicaton](./assets/images/980px.png)
-
-
 Output screenshot
 
-![screenshot-of-applicaton](./assets/images/768px.png)
+![screenshot-of-applicaton](./assets/images/img1.png)
+
+
+Output screenshot for 690px
+
+![screenshot-of-applicaton](./assets/images/690px.png)
