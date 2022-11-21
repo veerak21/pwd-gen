@@ -131,7 +131,7 @@ button[disabled] {
 }
 
 @media (max-width: 500px) {
-  .btn {
+  .btn {                    /* background color changed here also*/
     font-size: 0.8rem;
   }
 }
