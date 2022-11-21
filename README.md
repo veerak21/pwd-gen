@@ -13,7 +13,7 @@ Using this project will give new developers an idea of powering starter codes wi
 ## Credits:
 Thanks to Xander Rapstine (https://github.com/Xandromus) for providing the rescources for this project.
 
-## Website URL and imange:
+## Website URL and image:
 
 https://veerak21.github.io/pwd-gen
 
@@ -22,9 +22,11 @@ Output screenshot
 ![screenshot-of-applicaton](./assets/images/img1.png)
 
 
+
 Output screenshot for 690px
 
 ![screenshot-of-applicaton](./assets/images/690px.png)
+
 
 
 Output screenshot for 500px
