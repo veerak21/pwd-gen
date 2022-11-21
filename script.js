@@ -20,15 +20,15 @@ function writePassword() {
   if(correctPromts){
   var newPassword = generatePassword(); //calling and assigning generatePassword function 
        passwordText.value = newPassword;
-  } else {
-    passwordText.value = "";
   }
+  
 }
 // This function asks for the user inputs.
  function getPrompts(){
    choiceArr = [];
     characterLength = parseInt(prompt("How long do you want your password to be?"));
     
+    //This condition checks the length of the password
       if(isNaN(characterLength) || characterLength < 8 || characterLength > 128 ){
           alert("Password length must be a number, and between 8 and 128 characters");
        return false;
