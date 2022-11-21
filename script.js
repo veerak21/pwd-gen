@@ -7,19 +7,22 @@ var upperCaseArr = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', '
 var numberArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
 // Get references to the #generate element
+// This variable targets the generate id represents Generate Password btn
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
+// When user clicks the generateBtn, it calls the writePassword function
 generateBtn.addEventListener("click", writePassword);
 
 // This function prompts for the declared variables and generates the password
 function writePassword() {
-  var correctPromts = getPrompts(); // calling and assigning the getPrompts function
+  var correctPromts = getPrompts(); // calling the getPrompts function and value stored in the variable
+  // This variable targets the password id represents card-body, it displayed generated password on the screen 
   var passwordText = document.querySelector("#password");
  // This condition checks if the promts are true
   if(correctPromts){
-  var newPassword = generatePassword(); //calling and assigning generatePassword function 
-       passwordText.value = newPassword;
+  var newPassword = generatePassword(); //calling generatePassword function and value stored in the variable
+       passwordText.value = newPassword; //Displays the generated password
   }
   
 }
